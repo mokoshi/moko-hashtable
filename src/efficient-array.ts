@@ -8,6 +8,9 @@ export class EfficientArray {
     const i = this.findIndex(key);
     return this.sorted[i].key === key ? this.sorted[i].value : undefined;
   }
+  length() {
+    return this.sorted.length;
+  }
 
   private findIndex(key: string) {
     let left = 0;
